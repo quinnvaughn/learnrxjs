@@ -4,11 +4,11 @@ let source = Observable.fromEvent(document, 'mousemove');
 
 source.subscribe(next, error, complete);
 
-function next(value: any) {
+function next(value) {
   console.log('next: ', value);
 }
 
-function error(err: any) {
+function error(err) {
   console.log('error: ', err);
 }
 
